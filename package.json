@@ -1,0 +1,22 @@
+{
+  "name": "try.js",
+  "version": "0.1.0",
+  "description": "JavaScript equivalent of Rails try method",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "tap --cov test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fernahh/try.js.git"
+  },
+  "keywords": [
+    "rails",
+    "try method"
+  ],
+  "author": "@fernahh <fernahh@gmail.com> (https://github.com/fernahh)",
+  "license": "MIT",
+  "devDependencies": {
+    "tap": "^10.0.2"
+  }
+}

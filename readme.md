@@ -75,6 +75,7 @@ npm install try.js
 ## Alternatives
 - [Lodash `_.get()`](https://lodash.com/docs/4.17.4#get)
 - [Ramda `R.prop()`](http://ramdajs.com/docs/#prop)
+- [safe-chain.js](https://github.com/caiogondim/safe-chain.js)
 
 ## TODO
 

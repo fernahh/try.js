@@ -4,7 +4,9 @@
   "description": "JavaScript equivalent of Rails try method",
   "main": "src/index.js",
   "scripts": {
-    "test": "tap --cov test/*.js"
+    "lint": "xo",
+    "test": "tap --cov test/*.js",
+    "check": "npm run lint && npm test"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,14 @@
   "author": "@fernahh <fernahh@gmail.com> (https://github.com/fernahh)",
   "license": "MIT",
   "devDependencies": {
-    "tap": "^10.0.2"
+    "tap": "^10.0.2",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2,
+    "rules": {
+      "no-eval": 0
+    }
   }
 }

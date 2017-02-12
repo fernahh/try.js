@@ -7,7 +7,7 @@ const tryjs = (obj, prop, params) => {
     if (params) {
       try {
         prop = obj[prop].apply(obj, [].slice.call(params))
-      } catch (error) {
+      } catch (err) {
         prop = undefined
       }
     } else {
@@ -19,7 +19,7 @@ const tryjs = (obj, prop, params) => {
 
   try {
     prop = eval(`obj.${prop}`)
-  } catch (error) {
+  } catch (err) {
     prop = undefined
   }
 

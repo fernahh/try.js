@@ -1,4 +1,4 @@
-# try.js 
+# try.js
 
 ![Build status](https://travis-ci.org/fernahh/try.js.svg?branch=master)
 
@@ -12,10 +12,8 @@ When we want get a value of a determined path, sometimes some property is `undef
 
 #### Simple example:
 
-##### Without try.js
-
 ```javascript
-// on error
+// without try.js
 const obj = {}
 
 obj.x.y // TypeError: Cannot read property 'y' of undefined
@@ -25,11 +23,8 @@ const obj = {}
 
 if (obj && obj.x && obj.x.y)
   return obj.x.y // undefined
-```
 
-##### With try.js
-
-```javascript
+// with try.js
 const obj = {}
 
 tryjs(obj, 'y.x') // undefined
@@ -37,20 +32,16 @@ tryjs(obj, 'y.x') // undefined
 
 #### With function:
 
-##### Without try.js
-
 ```javascript
+// without try.js
 const obj = {
   sayHello: () => 'Hello'
 }
 
 if (obj && (typeof obj.sayHello === 'function')
   return obj.sayHello() // 'Hello'
-```
 
-##### With try.js
-
-```javascript
+// with try.js
 const obj = {
   sayHello: () => 'Hello'
 }
@@ -78,10 +69,5 @@ npm install try.js
 - [Lodash `_.get()`](https://lodash.com/docs/4.17.4#get)
 - [Ramda `R.prop()`](http://ramdajs.com/docs/#prop)
 - [safe-chain.js](https://github.com/caiogondim/safe-chain.js)
-
-## TODO
-
-- [ ] Linter
-- [ ] UMD dist
 
 MIT © [@fernahh](http://fernahh.com.br)

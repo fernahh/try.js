@@ -73,7 +73,7 @@ tap.test('object with method and params', test => {
 
 tap.test('object with method that return error', test => {
   const obj = {
-    sayHello: (person) => `Say Hello, ${person.name}`
+    sayHello: person => `Say Hello, ${person.name}`
   }
   const output = tryjs(obj, 'sayHello', [undefined])
 
@@ -83,9 +83,9 @@ tap.test('object with method that return error', test => {
 
 tap.test('object with method and object as param', test => {
   const obj = {
-    sayHello: (person) => `Say Hello, ${person.name}`
+    sayHello: person => `Say Hello, ${person.name}`
   }
-  const output = tryjs(obj, 'sayHello', [{ name: 'John' }])
+  const output = tryjs(obj, 'sayHello', [{name: 'John'}])
 
   test.assert(output === 'Say Hello, John')
   test.end()

@@ -1,4 +1,6 @@
-# try.js
+# try.js 
+
+![Build status](https://travis-ci.org/fernahh/try.js.svg?branch=master)
 
 > JavaScript equivalent of [Rails `try()` method](http://api.rubyonrails.org/v4.2/classes/Object.html#method-i-try)
 
@@ -79,7 +81,6 @@ npm install try.js
 
 ## TODO
 
-- [ ] CI
 - [ ] Linter
 - [ ] UMD dist
 

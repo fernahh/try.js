@@ -10,7 +10,7 @@
     "build:debug": "mkdir -p dist && browserify src/index.js -t [ babelify --presets [ es2015 ] ] -o dist/try.js",
     "build:min": "uglifyjs dist/try.js -o dist/try.min.js",
     "build": "npm run check && npm run build:debug && npm run build:min",
-    "prepublish": "npm run build"
+    "prepublish": "npm run check"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "babelify": "^7.3.0",
     "browserify": "^14.1.0",
     "tap": "^10.0.2",
+    "uglify-js": "^2.7.5",
     "xo": "^0.17.1"
   },
   "xo": {

@@ -65,6 +65,8 @@ tryjs(obj, 'add', [1, 2]) // 3
 npm install try.js
 ```
 
+Or [download the dist file](https://github.com/fernahh/try.js/blob/master/dist/try.min.js).
+
 ## Alternatives
 - [Lodash `_.get()`](https://lodash.com/docs/4.17.4#get)
 - [Ramda `R.prop()`](http://ramdajs.com/docs/#prop)

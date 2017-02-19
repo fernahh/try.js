@@ -71,5 +71,6 @@ Or [download the dist file](https://github.com/fernahh/try.js/blob/master/dist/t
 - [Lodash `_.get()`](https://lodash.com/docs/4.17.4#get)
 - [Ramda `R.prop()`](http://ramdajs.com/docs/#prop)
 - [safe-chain.js](https://github.com/caiogondim/safe-chain.js)
+- [Read about lenses](https://medium.com/javascript-inside/an-introduction-into-lenses-in-javascript-e494948d1ea5)
 
 MIT © [@fernahh](http://fernahh.com.br)

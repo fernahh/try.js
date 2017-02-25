@@ -1,6 +1,6 @@
 # try.js
 
-![Build status](https://travis-ci.org/fernahh/try.js.svg?branch=master)
+![Build status](https://travis-ci.org/fernahh/try.js.svg?branch=master) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 > JavaScript equivalent of [Rails `try()` method](http://api.rubyonrails.org/v4.2/classes/Object.html#method-i-try)
 
